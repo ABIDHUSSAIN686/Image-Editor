@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+  <div class="container disable">
+      <h2>Easy Image Editor</h2>
+      <div class="wrapper">
+          <div class="editor-panel">
+            <div class="filter">
+
+                                <div class="slider1">
+                                  <div class="filter-info1">
+                                      <p class="gs">Grayscale</p>
+                                      <p class="value">0%</p>
+                                  </div>
+
+                                        <input id="gs" class="active" name="gs" type="range" min="" max="100" value="0" >
+
+                                </div>
+                                <div class="slider2">
+                                  <div class="filter-info2">
+                                      <p class="gs">Blur</p>
+                                      <p class="value">0px</p>
+                                  </div>
+
+                                      <input id="blur" class="active" name="blur" type="range" min="0" max="100" value="0" >
+
+                                </div>
+                                <div class="slider3">
+                                  <div class="filter-info3">
+                                      <p class="gs">Rotate</p>
+                                      <p class="value">0deg</p>
+                                  </div>
+
+                                      <input id="hue-rotate"class="active"  name="hue-rotate" type="range" min="0" max="360" value="0" >
+
+                                </div>
+                                <div class="slider4">
+                                  <div class="filter-info4">
+                                      <p class="gs">Sepia</p>
+                                      <p class="value">0%</p>
+                                  </div>
+
+                                      <input id="sepia" class="active" name="sepia" type="range" min="0" max="" value="0" >
+
+                                </div>
+
+                    </div>
+                    </div>
+                    <div class="preview-img">
+                        <img src="image-placeholder.svg" id="targetimage" alt="preview-img">
+                    </div>
+                    </div>
+                    <div class="controls">
+                            <button class="reset-filter" type="reset" >Reset</button>
+                          <div class="row">
+                            <input type="file" class="file-input" accept="image/*" hidden>
+                            <button class="choose-img">Choose Image</button>
+                            <button class="save-img">Save Image</button>
+                          </div>
+                    </div>
+                </div>
+    <script src="script1.js"></script>
+</body>
+</html>
